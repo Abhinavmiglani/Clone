@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.codewitharjun.fullstackbackend.FullstackBackendApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.294 s <<< FAILURE! - in com.codewitharjun.fullstackbackend.FullstackBackendApplicationTests
+com.codewitharjun.fullstackbackend.FullstackBackendApplicationTests  Time elapsed: 0.289 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+

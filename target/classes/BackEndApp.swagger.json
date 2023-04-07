@@ -1,0 +1,45 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "BackEnd API",
+        "version": "1.0"
+    },
+    "host": "appicationapimanagement.azure-api.net",
+    "basePath": "/backEndApp",
+    "schemes": [
+        "http"
+    ],
+    "securityDefinitions": {
+    },
+    "security": [
+        {
+            "apiKeyHeader": []
+        },
+        {
+            "apiKeyQuery": []
+        }
+    ],
+    "paths": {
+        "/user": {
+            "get": {
+                "description": "A GET call on the app to get details of a specific user",
+                "operationId": "retrieve-resource",
+                "summary": "Retrieve resource",
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "query",
+                        "description": "the user id of the specific resource",
+                        "type": "number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returned in all cases."
+                    }
+                }
+            }
+        }
+    },
+    "tags": []
+}
