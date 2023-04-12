@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: backend-pod
+spec:
+   containers:
+   - name: app-container01
+     image: sameermosesmurala/sampleapp:latest
+     ports:
+     - containerPort: 8082
