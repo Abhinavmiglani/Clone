@@ -5,7 +5,7 @@ metadata:
 spec:
    containers:
    - name: app-container01
-     image: "https://hub.docker.com/repository/docker/sameermosesmurala/backendapplication:latest"
+     image: https://hub.docker.com/repository/docker/sameermosesmurala/backendapplication:latest
      imagePullPolicy: IfNotPresent
      ports:
      - containerPort: 8082
