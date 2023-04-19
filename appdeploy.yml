@@ -5,6 +5,6 @@ metadata:
 spec:
    containers:
    - name: app-container01
-     image: https://hub.docker.com/repository/docker/sameermosesmurala/backendapplication
+     image: sameermosesmurala/backendapplication:latest
      ports:
      - containerPort: 8082
