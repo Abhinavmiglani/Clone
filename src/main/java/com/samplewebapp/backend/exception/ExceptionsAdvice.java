@@ -18,6 +18,7 @@ public class ExceptionsAdvice {
 
         for(int i=0; i<100;i++)
         {
+            log.warn("Going to create a an customer not found error");
             log.error("Creating an customer not found error");
 
         }
@@ -33,6 +34,7 @@ public class ExceptionsAdvice {
 
         for(int i=0; i<100;i++)
         {
+            log.warn("Going to create a an custom error");
             log.error("Creating an custom error");
 
         }

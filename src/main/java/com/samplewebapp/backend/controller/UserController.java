@@ -23,6 +23,7 @@ public class UserController {
     AppUser newUser(@RequestBody AppUser newUser) {
         for(int i=0; i<100;i++)
         {
+            log.trace("Executing  new user API");
             log.info("Creating a new User");
         }
         log.info("Creating a new User");
@@ -33,6 +34,7 @@ public class UserController {
     List<AppUser> getAllUsers() {
         for(int i=0; i<100;i++)
         {
+            log.trace("Executing  Getting all users API");
             log.info("Getting all users");
         }
         return userRepository.findAll();
@@ -42,6 +44,7 @@ public class UserController {
     AppUser getUserById(@PathVariable Long id) {
         for(int i=0; i<100;i++)
         {
+            log.trace("Executing  Getting user by ID API");
             log.info("Getting user by ID");
         }
         return userRepository.findById(id).orElseThrow(() -> new NoSuchUserException(id));
@@ -51,6 +54,7 @@ public class UserController {
     AppUser updateUser(@RequestBody AppUser newUser, @PathVariable Long id) {
         for(int i=0; i<100;i++)
         {
+            log.trace("Executing  Updating an existing user API");
             log.info("Updating an existing user");
         }
         return userRepository.findById(id)
@@ -66,6 +70,7 @@ public class UserController {
     String deleteUser(@PathVariable Long id){
         for(int i=0; i<100;i++)
         {
+            log.trace("Executing  Deleting an existing user API");
             log.info("Deleting an existing user");
         }
         if(!userRepository.existsById(id)){
@@ -79,6 +84,7 @@ public class UserController {
     void createCustomError(){
         for(int i=0; i<100;i++)
         {
+            log.trace("Executing  Creating an error API");
             log.info("Creating an error");
 
         }
